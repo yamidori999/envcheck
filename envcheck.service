@@ -1,0 +1,14 @@
+[Unit]
+Description=Machine Environ Data Collector
+Requires=mariadb.service
+After=network.target
+After=mariadb.service
+
+[Service]
+Type=simple
+ExecStart=/bin/python3 /root/envcheck/main.py
+TimeoutStopSec=300s
+
+[Install]
+WantedBy=mariadb.service
+
