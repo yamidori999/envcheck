@@ -1,11 +1,12 @@
 # envcheck
-                    select count(*)
-  1day  =   36Mb
-  7days =  184Mb
- 30days =  756Mb    22-23s
- 60days = 1504Mb    45-46s
- 90days = 2252Mb    134s-135s
-365days = 9108Mb    8m-9m
+size | select count(*)
+-----|----------------
+  1day  =   36Mb |
+  7days =  184Mb |
+ 30days =  756Mb |  22-23s
+ 60days = 1504Mb |  45-46s
+ 90days = 2252Mb |  134s-135s
+365days = 9108Mb |  8m-9m
 
 - [ ] 監視対象がハードコード
 - [ ] 引数処理がない
